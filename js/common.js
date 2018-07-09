@@ -107,6 +107,29 @@ document.getElementById("seconds"));
 		]
 	});*/
 
+	//slick carousel
+	$('.rev_slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		nextArrow: '.rev_next',
+		prevArrow: '.rev_prev',
+		customPaging: function(slider, i) {
+			return '<div class="dot"></div>';
+		}
+	});
+	$('.cert_slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: true,
+		//centerMode: true,
+		nextArrow: '.cert_next',
+		prevArrow: '.cert_prev',
+		customPaging: function(slider, i) {
+			return '<div class="dot"></div>';
+		}
+	});
+
 	/*
 	//video player + button
 	$('#mainVideo').click(function(){
@@ -125,7 +148,7 @@ document.getElementById("seconds"));
 	});
 	*/
 
-	/*
+	
 	//validation
 		var locationURL = window.location.search;
 	if ( locationURL == "?p=179&lang=ua" ) {
@@ -173,8 +196,457 @@ document.getElementById("seconds"));
 		}
 	});
 
-	*/
-
+	$('#main1Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#main2Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#product1Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#product2Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#product3Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#product4Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#product5Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#product6Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#stepForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#bottom_Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#bottom_Form2').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#contactForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#make1Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#make2Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#make3Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	
 
 });
 /*

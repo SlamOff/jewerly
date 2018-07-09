@@ -52,16 +52,13 @@ p {
 	position: relative;
 	z-index: 300;
 }
-.slick-active .dot {
-	
-}
 .slick-dots {
-	bottom: -70px!important;
+	bottom: -106px!important;
 }
 .next, .prev {
 	position: absolute;
-	width: 70px;
-	height: 9px;
+	width: 29px;
+	height: 23px;
 	z-index: 300;
 	cursor: pointer;
 	-webkit-transition: all .3s;
@@ -348,6 +345,7 @@ footer .row {
 }
 label.error {
 	color: red;
+	font-size: 15px;
 }
 .form input::-webkit-input-placeholder {
 	font-size: 14px;
@@ -583,6 +581,14 @@ h2 {
 	background-image: url('../img/product_bg.png');
 	z-index: 2;
 }
+#product1FormWrapper,
+#product2FormWrapper,
+#product3FormWrapper,
+#product4FormWrapper,
+#product5FormWrapper,
+#product6FormWrapper {
+	padding-right: 5rem;
+}
 .product h4 {
 	text-align: center;
 	font-weight: bold;
@@ -648,6 +654,10 @@ h2 {
 .make h4 {
 	font-size: 2.3rem;
 	margin-bottom: 2rem;
+}
+.make .main_btn {
+	position: relative;
+	z-index: 20;
 }
 .make p {
 	margin-bottom: 4rem;
@@ -755,15 +765,100 @@ h2 {
 	left: 0;
 	top: 0;
 }
-
-
-
-
-
-
-
-
-
+.rev_pict {
+	width: 25%;
+	padding-right: 30px;
+	float: left;
+}
+.rev_pict img {
+	max-width: 100%;
+}
+.rev_text {
+	width: 75%;
+	float: left;
+	border: 4px solid #575f72;
+	padding: 5rem 0;
+	position: relative;
+}
+.rev_text:before {
+	content: "«";
+	position: absolute;
+	line-height: 5rem;
+	top: 5rem;
+	left: 3rem;
+	font-size: 12rem;
+	font-weight: bold;
+	color: #c3957b;
+}
+.rev_text:after {
+	content: "»";
+	position: absolute;
+	line-height: 5rem;
+	bottom: 5rem;
+	right: 3rem;
+	font-size: 12rem;
+	font-weight: bold;
+	color: #c3957b;
+}
+.rev_text p {
+	max-width: 570px;
+	margin: 0 auto;
+	position: relative;
+}
+.rev_text p:before {
+	position: absolute;
+	top: -5rem;
+	left: -20rem;
+	content: "";
+	background-image: url('../img/rev_bg.png');
+	width: 962px;
+	height: 337px;
+	z-index: -1;
+}
+.rev_prev {
+	bottom: -70px;
+	left: 35%;
+}
+.rev_next {
+	bottom: -70px;
+	right: 35%;
+}
+.dot {
+	width: 12px;
+	height: 12px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px solid #c4977e;
+}
+.slick-active .dot {
+	background-color: #c4977e;
+}
+.cert img {
+	max-width: 270px;
+	margin: 0;
+}
+.cert .slider_wrapper {
+	max-width: 970px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cert .prev {
+	left: -100px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.cert .next {
+	right: -100px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+/*.cert .slick-current {
+	transform: scale(1.5);
+}*/
 .step p {
 	margin: 3rem 0;
 }
