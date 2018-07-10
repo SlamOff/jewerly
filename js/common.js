@@ -1,3 +1,7 @@
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  $('.viewport').attr('content', 'width=1300');
+}
+
 $(document).ready(function() {
 	// remove placeholder after click
 	$(document).ready(function () {
