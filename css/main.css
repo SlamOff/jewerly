@@ -740,12 +740,26 @@ h2 {
 .open_form .open_form_left p.counter_head {
 	font-size: 1.6rem;
 }
-.photo .photo_wrapper {
-	height: 450px;
-	position: relative;
+.photo .slider_wrapper .w2 {
+	max-width: 970px;
+	margin: 0 auto;
 }
-.photo img {
+/*.photo img {
 	position: absolute;
+}*/
+.photo_prev {
+	bottom: -60px;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.photo_next {
+	bottom: -60px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
 }
 .photo .photo_1 {
 	right: 0;

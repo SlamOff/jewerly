@@ -122,6 +122,16 @@ document.getElementById("seconds"));
 			return '<div class="dot"></div>';
 		}
 	});
+	$('.photo_slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		//dots: true,
+		nextArrow: '.photo_next',
+		prevArrow: '.photo_prev',
+		//customPaging: function(slider, i) {
+		//	return '<div class="dot"></div>';
+		//}
+	});
 	$('.cert_slider').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
